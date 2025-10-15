@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2020", // modern JS features
+        "module": "commonjs", // Node.js style modules
+        "strict": true, // enable strict type checking
+        "esModuleInterop": true, // allow default import of CommonJS modules
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true, // skip type checking of all declaration files
+        "outDir": "./dist", // compiled JS output
+        "types": [
+            "node",
+            "jest"
+        ], // ✅ Node.js and Jest types
+        "resolveJsonModule": true, // allow importing JSON files
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src",
+        "tests"
+    ], // folders with your TS source and test files
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
